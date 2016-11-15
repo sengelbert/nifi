@@ -58,7 +58,7 @@ import org.apache.nifi.util.hive.HiveJdbcCommon;
         + " Streaming is used so arbitrarily large result sets are supported. This processor can be scheduled to run on "
         + "a timer, or cron expression, using the standard scheduling methods, or it can be triggered by an incoming FlowFile. "
         + "If it is triggered by an incoming FlowFile, then attributes of that FlowFile will be available when evaluating the "
-        + "select query. FlowFile attribute 'selecthiveql.row.count' indicates how many rows were selected.")
+        + "select query. FlowFile attribute 'selecthiveql.row.count' indicates how many rows were selected. This version has been modified for CDH 5.9.0.")
 @WritesAttributes({
         @WritesAttribute(attribute = "mime.type", description = "Sets the MIME type for the outgoing flowfile to application/avro-binary for Avro or text/csv for CSV."),
         @WritesAttribute(attribute = "filename", description = "Adds .avro or .csv to the filename attribute depending on which output format is selected."),

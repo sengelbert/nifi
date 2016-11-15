@@ -62,7 +62,7 @@ import java.util.regex.Pattern;
 @CapabilityDescription("Executes a HiveQL DDL/DML command (UPDATE, INSERT, e.g.). The content of an incoming FlowFile is expected to be the HiveQL command "
         + "to execute. The HiveQL command may use the ? to escape parameters. In this case, the parameters to use must exist as FlowFile attributes "
         + "with the naming convention hiveql.args.N.type and hiveql.args.N.value, where N is a positive integer. The hiveql.args.N.type is expected to be "
-        + "a number indicating the JDBC Type. The content of the FlowFile is expected to be in UTF-8 format.")
+        + "a number indicating the JDBC Type. The content of the FlowFile is expected to be in UTF-8 format. This version has been modified for CDH 5.9.0.")
 @ReadsAttributes({
         @ReadsAttribute(attribute = "hiveql.args.N.type", description = "Incoming FlowFiles are expected to be parametrized HiveQL statements. The type of each Parameter is specified as an integer "
                 + "that represents the JDBC Type of the parameter."),
