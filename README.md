@@ -12,7 +12,7 @@
   See the License for the specific language governing permissions and
   limitations under the License.
 -->
-## Building for this for Cloudera CDH 5.9.0 Hive 1.1.x specifically
+## Building Nifi 1.0.0 for Cloudera CDH 5.9.0 Hive 1.1.x specifically
 Sample syntax: "mvn clean install -DskipTests -Pcloudera -Dhive.version=1.1.0-cdh5.9.0 -Dhadoop.version=2.6.0-cdh5.9.0"
 
 # Apache NiFi [![Build Status](https://travis-ci.org/apache/nifi.svg?branch=master)](https://travis-ci.org/apache/nifi)
